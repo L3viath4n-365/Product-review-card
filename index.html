@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Young+Serif&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @font-face {
+      font-family: "Fraunces";
+      font-family: "Young Serif";
+      font-weight: 400;
+      font-style: normal;
+      src: url(https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Young+Serif&display=swap);
+    }
+
+    h1 {
+      font-family: "Young Serif";
+    }
+
+    p {
+      font-family: "Fraunces";
+    }
+  </style>
+</head>
+<body class="text-gray-500 bg-[hsl(30,38%,92%)] flex flex-col h-screen items-center justify-center">
+  <main class="flex flex-col bg-white m-4 rounded-md md:grid md:grid-cols-2 md:h-fit md:w-[60vw] md:justify-center lg:grid lg:grid-cols-2">
+    <div>
+      <img src="./images/image-product-mobile.jpg" alt="Perfume image" class="w-100% rounded-md md:hidden lg:hidden">
+      <img src="./images/image-product-desktop.jpg" alt="Perfume image" class=" hidden md:h-full md:rounded-md lg:h-full lg:rounded-md md:block lg:block">
+    </div>
+    <div class="flex flex-col gap-3 m-6 md:gap-10 md:h-full md:m-10 lg:gap-10 lg:h-full lg:m-10">
+      <p class="uppercase font-light text-xsm md:text-sm lg:text-md">P e r f u m e</p>
+      <h1 class="text-4xl font-bold text-gray-800 md:text-5xl lg:text-5xl">Gabrielle Essence Eau De Parfum</h1>
+      <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of <span class="uppercase">chanel.</span></p>
+      <div>
+          <p class="text-3xl font-bold text-green-700 inline-block md:text-4xl lg:text-4xl">$149.99</p>
+          <p class="line-through text-gray-500 inline-block ml-4 md:text-sm lg:text-sm">$169.99</p>
+      </div>
+      <a href="#" class="bg-green-700 text-white w-full py-3 mt-6 rounded-lg block text-center md:hover:bg-green-900 lg:hover:bg-green-900">Add to Cart</a>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
